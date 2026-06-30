@@ -38,3 +38,6 @@ vim.keymap.set('n', '<leader>qo', ':copen<CR>', { desc = 'Open quickfix' })
 -- background toggle
 -- vim.keymap.set("n", "<leader>ub", ':exec &bg=="light"? "set bg=dark" : "set bg=light"<CR>', opts),
 vim.keymap.set("n", "<leader>ub", function() _G.toggle_colorscheme() end, { desc = 'Toggle light/dark theme' })
+
+-- mini files
+vim.keymap.set('n', '<leader>e', function() MiniFiles.open() end, { desc = 'File explorer' })

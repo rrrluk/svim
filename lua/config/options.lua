@@ -87,3 +87,6 @@ vim.opt.undodir = undodir -- set the undo directory
 vim.opt.wrap = false -- Do not wrap lines by default
 vim.opt.colorcolumn = "100"
 vim.opt.encoding = "utf-8"
+vim.opt.updatetime = 300 -- faster completion
+vim.opt.timeoutlen = 500 -- timeout duration
+vim.opt.ttimeoutlen = 50 -- key code timeout
