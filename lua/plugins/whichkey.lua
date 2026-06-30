@@ -5,4 +5,5 @@ wk.add({
   { "<leader>b", group = "Buffers" },
   { "<leader>q", group = "Quickfix" },
   { "<leader>c", group = "Code" },
+  { "<leader>f", group = "Find" },
 })

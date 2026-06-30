@@ -34,6 +34,7 @@ require('mini.icons').setup()
 require('mini.git').setup()
 require('mini.diff').setup()
 require('mini.surround').setup()
+require('plugins.minipick')
 require("plugins.minifiles")
 require("plugins.whichkey")
 
