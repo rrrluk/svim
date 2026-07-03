@@ -1,7 +1,5 @@
 -- Keybinds
 
-vim.keymap.set('n', '<leader>cd', vim.diagnostic.open_float, { desc = 'View diagnostics' })
-
 vim.keymap.set('n', '<leader>r', function()
 vim.cmd('update')
 vim.cmd('source')

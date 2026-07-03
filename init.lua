@@ -1,7 +1,5 @@
 --  NOTE: Must h ppen before plugins are loaded (otherwise wrong leader will be used)
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
-
+vim.g.mapleader = ' ' vim.g.maplocalleader = ' '
 
 -- vim pack
 vim.pack.add({
@@ -14,6 +12,7 @@ vim.pack.add({
   { src = 'https://github.com/nvim-treesitter/nvim-treesitter' },
   { src = 'https://github.com/nvim-treesitter/nvim-treesitter-textobjects' },
   { src = 'https://github.com/alexghergh/nvim-tmux-navigation'},
+  { src = 'https://github.com/williamboman/mason.nvim' },
 })
 
 -- Separate system to add built-in plugins
@@ -50,5 +49,7 @@ require("plugins.minifiles")
 require("plugins.whichkey")
 require("plugins.treesitter-textobjects")
 require("plugins.nvim-tmux-navigation")
+require("plugins.mason")
+require("plugins.lsp")
 
 
