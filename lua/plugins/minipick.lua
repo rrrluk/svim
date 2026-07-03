@@ -18,3 +18,10 @@ pick.setup({
     use_cache = true,
   },
 })
+
+vim.keymap.set('n', '<leader><leader>', function() MiniPick.builtin.files() end,    { desc = 'Find files' })
+vim.keymap.set('n', '<leader>ff', function() MiniPick.builtin.files() end,    { desc = 'Find files' })
+vim.keymap.set('n', '<leader>/', function() MiniPick.builtin.grep_live() end, { desc = 'Live grep' })
+vim.keymap.set('n', '<leader>fg', function() MiniPick.builtin.grep_live() end, { desc = 'Live grep' })
+vim.keymap.set('n', '<leader>fb', function() MiniPick.builtin.buffers() end,   { desc = 'Buffers' })
+vim.keymap.set('n', '<leader>fh', function() MiniPick.builtin.help() end,      { desc = 'Help' })

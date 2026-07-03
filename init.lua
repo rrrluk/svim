@@ -11,12 +11,18 @@ vim.pack.add({
   { src = 'https://github.com/EdenEast/nightfox.nvim' },
   { src = 'https://github.com/ellisonleao/gruvbox.nvim' },
   { src = 'https://github.com/folke/which-key.nvim' },
+  { src = 'https://github.com/nvim-treesitter/nvim-treesitter' },
+  { src = 'https://github.com/nvim-treesitter/nvim-treesitter-textobjects' },
+  { src = 'https://github.com/alexghergh/nvim-tmux-navigation'},
 })
+
+-- Separate system to add built-in plugins
+vim.cmd.packadd('nvim.difftool')
 
 -- Colorscheme
 -- vim.cmd("colorscheme retrobox")
 -- Setting variables for our lightdark toggle script
-vim.g.dark_theme = "gruvbox" -- variants: highk(light), reticle, polyimide, epitaxy, metalgate
+vim.g.dark_theme = "gruvbox" 
 -- vim.g.dark_theme = "usgc-polyimide" -- variants: highk(light), reticle, polyimide, epitaxy, metalgate
 vim.g.light_theme = "dayfox"
 
@@ -27,15 +33,22 @@ require("plugins.lightdark")
 require("config.keymaps")
 require("config.options")
 
-require('mini.statusline').setup()
-require('mini.basics').setup()
 require('mini.basics').setup()
 require('mini.icons').setup()
-require('mini.git').setup()
+require('mini.statusline').setup()
+require('mini.ai').setup()
 require('mini.diff').setup()
 require('mini.surround').setup()
+require('mini.tabline').setup()
+require('mini.pairs').setup()
+require('mini.indentscope').setup()
+
+require('plugins.mininotify')
 require('plugins.minipick')
+require('plugins.minigit')
 require("plugins.minifiles")
 require("plugins.whichkey")
+require("plugins.treesitter-textobjects")
+require("plugins.nvim-tmux-navigation")
 
 

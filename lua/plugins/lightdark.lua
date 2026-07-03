@@ -12,3 +12,5 @@ _G.toggle_colorscheme = function()
     vim.cmd.colorscheme(dark_theme)
   end
 end
+
+vim.keymap.set("n", "<leader>ub", function() _G.toggle_colorscheme() end, { desc = 'Toggle light/dark theme' })
