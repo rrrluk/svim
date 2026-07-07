@@ -13,6 +13,9 @@ vim.pack.add({
   { src = 'https://github.com/nvim-treesitter/nvim-treesitter-textobjects' },
   { src = 'https://github.com/alexghergh/nvim-tmux-navigation'},
   { src = 'https://github.com/williamboman/mason.nvim' },
+  { src = 'https://github.com/saghen/blink.cmp', version = 'v1.10.2' },
+  -- optional but nice: snippets
+  { src = 'https://github.com/rafamadriz/friendly-snippets' },
 })
 
 -- Separate system to add built-in plugins
@@ -53,5 +56,6 @@ require("plugins.nvim-tmux-navigation")
 require("plugins.mason")
 require("plugins.lsp")
 require("plugins.checkbox")
+require("plugins.blink")
 
 
