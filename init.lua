@@ -31,6 +31,7 @@ require("plugins.lightdark")
 
 require("config.keymaps")
 require("config.options")
+require("config.autocmds")
 
 require('mini.basics').setup()
 require('mini.icons').setup()
@@ -51,5 +52,6 @@ require("plugins.treesitter-textobjects")
 require("plugins.nvim-tmux-navigation")
 require("plugins.mason")
 require("plugins.lsp")
+require("plugins.checkbox")
 
 
