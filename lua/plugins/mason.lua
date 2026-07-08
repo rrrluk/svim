@@ -18,6 +18,9 @@ vim.schedule(function()
       'bash-language-server',
       'pyright',
       'yaml-language-server',
+      'stylua', 
+      'ruff',
+      'shfmt',
     }
     for _, server in ipairs(servers) do
       local ok, pkg = pcall(registry.get_package, server)

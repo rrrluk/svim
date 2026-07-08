@@ -9,7 +9,7 @@ require('mini.notify').setup({
     -- Notifications about LSP progress
   lsp_progress = {
     -- Whether to enable showing
-    enable = true,
+    enable = false,
 
     -- Notification level
     level = 'INFO',

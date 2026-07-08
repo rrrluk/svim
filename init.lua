@@ -16,6 +16,7 @@ vim.pack.add({
   { src = 'https://github.com/saghen/blink.cmp', version = 'v1.10.2' },
   -- optional but nice: snippets
   { src = 'https://github.com/rafamadriz/friendly-snippets' },
+  { src = 'https://github.com/stevearc/conform.nvim' },
 })
 
 -- Separate system to add built-in plugins
@@ -57,5 +58,6 @@ require("plugins.mason")
 require("plugins.lsp")
 require("plugins.checkbox")
 require("plugins.blink")
+require("plugins.conform")
 
 
