@@ -1,3 +1,4 @@
+-- Lua
 vim.lsp.config('lua_ls', {
   cmd = { 'lua-language-server' },
   filetypes = { 'lua' },
@@ -23,6 +24,7 @@ vim.lsp.config('bashls', {
   root_markers = { '.git' },
 })
 vim.lsp.enable('bashls')
+
 -- python
 vim.lsp.config('pyright', {
   cmd = { 'pyright-langserver', '--stdio' },
@@ -35,6 +37,7 @@ vim.lsp.config('pyright', {
   },
 })
 vim.lsp.enable('pyright')
+
 -- yaml
 vim.lsp.config('yamlls', {
   cmd = { 'yaml-language-server', '--stdio' },
@@ -42,6 +45,16 @@ vim.lsp.config('yamlls', {
   root_markers = { '.git' },
 })
 vim.lsp.enable('yamlls')
+
+-- json
+vim.lsp.config('jsonls', {
+  cmd = { 'vscode-json-language-server', '--stdio' },
+  filetypes = { 'json', 'jsonc' },
+  root_markers = { '.git' },
+})
+vim.lsp.enable('jsonls')
+
+-- LSP keybinds
 
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(args)

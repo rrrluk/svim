@@ -4,6 +4,7 @@ require('conform').setup({
     python = { 'ruff_format' },
     sh = { 'shfmt' },
     bash = { 'shfmt' },
+    json = { 'prettier' },
   },
 })
 

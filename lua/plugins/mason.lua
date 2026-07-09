@@ -7,6 +7,7 @@ local servers = {
   'lua-language-server',
   'bash-language-server',
   'pyright',
+  'json-lsp',
   'yaml-language-server',  -- since you're DevOps
 }
 
@@ -20,6 +21,7 @@ vim.schedule(function()
       'yaml-language-server',
       'stylua', 
       'ruff',
+      'prettier',
       'shfmt',
     }
     for _, server in ipairs(servers) do
