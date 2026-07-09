@@ -3,22 +3,19 @@ require('mason').setup({
 })
 
 -- auto install servers
-local servers = {
-  'lua-language-server',
-  'bash-language-server',
-  'pyright',
-  'json-lsp',
-  'yaml-language-server',  -- since you're DevOps
-}
 
 vim.schedule(function()
   local registry = require('mason-registry')
   registry.refresh(function()
+    -- auto install servers
     local servers = {
+      -- LSP serers
       'lua-language-server',
       'bash-language-server',
       'pyright',
       'yaml-language-server',
+      'json-lsp',
+      -- Formatters
       'stylua', 
       'ruff',
       'prettier',
