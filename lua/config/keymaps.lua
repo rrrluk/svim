@@ -33,5 +33,11 @@ vim.keymap.set('n', '<M-k>', ':cprev<CR>', { desc = 'Previous quickfix' })
 vim.keymap.set('n', '<leader>qc', ':cclose<CR>', { desc = 'Close quickfix' })
 vim.keymap.set('n', '<leader>qo', ':copen<CR>', { desc = 'Open quickfix' })
 
+-- test notification
+vim.keymap.set('n', '<leader>um', function()
+  vim.notify("Test Error", vim.log.levels.ERROR)
+end,
+{ desc = 'Send Test Notification' })
+
 
 

@@ -17,6 +17,7 @@ vim.pack.add({
   -- optional but nice: snippets
   { src = 'https://github.com/rafamadriz/friendly-snippets' },
   { src = 'https://github.com/stevearc/conform.nvim' },
+  { src = 'https://github.com/folke/snacks.nvim' },
 })
 
 -- Separate system to add built-in plugins
@@ -47,10 +48,10 @@ require('mini.tabline').setup()
 require('mini.pairs').setup()
 require('mini.indentscope').setup()
 
-require('plugins.mininotify')
-require('plugins.minipick')
+-- require('plugins.mininotify')
+-- require('plugins.minipick')
+-- require("plugins.minifiles")
 require('plugins.minigit')
-require("plugins.minifiles")
 require("plugins.whichkey")
 require("plugins.treesitter-textobjects")
 require("plugins.nvim-tmux-navigation")
@@ -59,5 +60,6 @@ require("plugins.lsp")
 require("plugins.checkbox")
 require("plugins.blink")
 require("plugins.conform")
+require("plugins.snacks")
 
 
