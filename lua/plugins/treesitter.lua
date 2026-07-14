@@ -5,7 +5,7 @@ treesitter.setup()
 treesitter.install({
   'lua', 'json', 'javascript', 'typescript', 'tsx', 'go', 'yaml', 'html',
   'css', 'python', 'bash', 'vim', 'dockerfile', 'gitignore', 'query',
-  'vimdoc', 'c', 'java', 'rust',
+  'vimdoc', 'c', 'java', 'rust', 'xml',
 }):wait(300000)
 
 -- safe filetype autocmd from MR Jakob

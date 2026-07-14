@@ -15,6 +15,7 @@ vim.schedule(function()
       'pyright',
       'yaml-language-server',
       'json-lsp',
+      'lemminx',
       -- Formatters
       'stylua', 
       'ruff',

@@ -14,7 +14,7 @@ require('snacks').setup({
 })
 
 -- File finder
-vim.keymap.set('n', '<leader><leader>', function() Snacks.picker.files() end, { desc = 'Find files' })
+vim.keymap.set('n', '<leader><leader>', function() Snacks.picker.smart() end, { desc = 'Smart find files' })
 vim.keymap.set('n', '<leader>ff', function() Snacks.picker.files() end, { desc = 'Find files' })
 -- Grep
 vim.keymap.set('n', '<leader>/', function() Snacks.picker.grep() end, { desc = 'Live grep' })
