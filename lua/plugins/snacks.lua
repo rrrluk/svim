@@ -23,6 +23,7 @@ vim.keymap.set('n', '<leader>fg', function() Snacks.picker.grep({ hidden = true 
 vim.keymap.set('n', '<leader>fb', function() Snacks.picker.buffers() end, { desc = 'Buffers' })
 vim.keymap.set('n', '<leader>fh', function() Snacks.picker.help() end, { desc = 'Help' })
 vim.keymap.set('n', '<leader>fr', function() Snacks.picker.recent() end, { desc = 'Recent files' })
+vim.keymap.set('n', '<leader>fm', function() Snacks.picker.marks() end, { desc = 'Marks' })
 -- Explorer
 vim.keymap.set('n', '<leader>e', function() Snacks.explorer() end, { desc = 'File explorer' })
 
