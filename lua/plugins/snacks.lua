@@ -14,7 +14,7 @@ require('snacks').setup({
 })
 
 -- File finder
-vim.keymap.set('n', '<leader><leader>', function() Snacks.picker.files() end, { desc = 'Find files' })
+vim.keymap.set('n', '<leader><leader>', function() Snacks.picker.smart() end, { desc = 'Smart find files' })
 vim.keymap.set('n', '<leader>ff', function() Snacks.picker.files() end, { desc = 'Find files' })
 -- Grep
 vim.keymap.set('n', '<leader>/', function() Snacks.picker.grep() end, { desc = 'Live grep' })
@@ -23,6 +23,7 @@ vim.keymap.set('n', '<leader>fg', function() Snacks.picker.grep({ hidden = true 
 vim.keymap.set('n', '<leader>fb', function() Snacks.picker.buffers() end, { desc = 'Buffers' })
 vim.keymap.set('n', '<leader>fh', function() Snacks.picker.help() end, { desc = 'Help' })
 vim.keymap.set('n', '<leader>fr', function() Snacks.picker.recent() end, { desc = 'Recent files' })
+vim.keymap.set('n', "<leader>:", function() Snacks.picker.command_history() end, { desc = "Command History" })
 -- Explorer
 vim.keymap.set('n', '<leader>e', function() Snacks.explorer() end, { desc = 'File explorer' })
 
