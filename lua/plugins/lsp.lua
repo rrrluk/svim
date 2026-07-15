@@ -54,6 +54,14 @@ vim.lsp.config('jsonls', {
 })
 vim.lsp.enable('jsonls')
 
+-- xml
+vim.lsp.config('lemminx', {
+  cmd = { 'lemminx' },
+  filetypes = { 'xml', 'xsd', 'xsl', 'svg' },
+  root_markers = { '.git' },
+})
+vim.lsp.enable('lemminx')
+
 -- LSP keybinds
 
 vim.api.nvim_create_autocmd('LspAttach', {
