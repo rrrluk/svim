@@ -39,5 +39,10 @@ vim.keymap.set('n', '<leader>um', function()
 end,
 { desc = 'Send Test Notification' })
 
+-- update plugins
+vim.keymap.set('n', '<leader>pu', function()
+  vim.pack.update()
+end,
+{ desc = 'Update plugins' })
 
 
