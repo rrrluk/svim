@@ -18,6 +18,7 @@ vim.pack.add({
   { src = 'https://github.com/rafamadriz/friendly-snippets' },
   { src = 'https://github.com/stevearc/conform.nvim' },
   { src = 'https://github.com/folke/snacks.nvim' },
+  { src = 'https://github.com/sindrets/diffview.nvim' },
 })
 
 -- Separate system to add built-in plugins
@@ -61,5 +62,6 @@ require("plugins.checkbox")
 require("plugins.blink")
 require("plugins.conform")
 require("plugins.snacks")
+require("plugins.diffview")
 
 
