@@ -34,6 +34,7 @@ vim.keymap.set('n', '<leader>un', function() Snacks.notifier.show_history() end,
 vim.keymap.set('n', '<leader>gg', function() Snacks.lazygit() end, { desc = 'Lazygit' })
 vim.keymap.set('n', '<leader>gv', function()
   Snacks.picker.git_branches({
+    all = true,
     actions = {
       confirm = function(picker, item)
         picker:close()
