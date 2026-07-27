@@ -32,6 +32,7 @@ vim.keymap.set('n', '<leader>un', function() Snacks.notifier.show_history() end,
 
 -- Git
 vim.keymap.set('n', '<leader>gg', function() Snacks.lazygit() end, { desc = 'Lazygit' })
+vim.keymap.set('n', '<leader>gl', function() Snacks.picker.git_log_file() end, { desc = 'Git log file' })
 vim.keymap.set('n', '<leader>gv', function()
   Snacks.picker.git_branches({
     all = true,
@@ -45,3 +46,7 @@ vim.keymap.set('n', '<leader>gv', function()
     },
   })
 end, { desc = 'Diffview branch' })
+
+-- Code
+vim.keymap.set('n', '<leader>fd', function() Snacks.picker.diagnostics() end, { desc = 'Diagnostics picker' })
+
