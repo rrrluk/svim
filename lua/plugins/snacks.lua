@@ -32,4 +32,15 @@ vim.keymap.set('n', '<leader>un', function() Snacks.notifier.show_history() end,
 
 -- Git
 vim.keymap.set('n', '<leader>gg', function() Snacks.lazygit() end, { desc = 'Lazygit' })
-
+vim.keymap.set('n', '<leader>gv', function()
+  Snacks.picker.git_branches({
+    actions = {
+      confirm = function(picker, item)
+        picker:close()
+        if item then
+          vim.cmd('DiffviewOpen ' .. item.branch)
+        end
+      end,
+    },
+  })
+end, { desc = 'Diffview branch' })
