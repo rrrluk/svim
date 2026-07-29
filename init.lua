@@ -46,6 +46,7 @@ require('mini.diff').setup()
 require('mini.surround').setup()
 require('mini.tabline').setup()
 require('mini.pairs').setup()
+require('mini.align').setup()
 require('mini.indentscope').setup()
 
 -- require('plugins.mininotify')

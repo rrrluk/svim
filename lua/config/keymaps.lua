@@ -45,4 +45,9 @@ vim.keymap.set('n', '<leader>pu', function()
 end,
 { desc = 'Update plugins' })
 
+-- wrap
+vim.keymap.set('n', '<leader>uw', function()
+  vim.wo.wrap = not vim.wo.wrap
+end, { desc = 'Toggle word wrap' })
+
 
